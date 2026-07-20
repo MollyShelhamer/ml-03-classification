@@ -73,4 +73,3 @@ to get the example projects running on your machine.
 - I implemented a custom version of the notebook by changing the target to sex and updating the narrative, setup, and evaluation text.
 - The model performed reasonably well, but the new target was more difficult than species.
 - This project helped me practice classification workflow, model evaluation, and documentation.
-- Display at least one image or screenshot showing your work.
