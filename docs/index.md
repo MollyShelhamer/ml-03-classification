@@ -27,6 +27,8 @@ to get the example projects running on your machine.
 - The change improved the readability of the evaluation output.
 - This was a simple update, but it made the chart easier to interpret.
 
+![alt text](image.png)
+
 ## Phase 5. Custom Project
 
 - I adapted the example notebook into a custom classification project.
@@ -62,6 +64,9 @@ to get the example projects running on your machine.
 - I used accuracy and a classification report as the main evidence.
 - The test accuracy was about 0.84.
 - The result was useful because it showed that the model could learn the pattern, though the new target was harder than species.
+- The split was wider than expected.
+
+![alt text](image-1.png)
 
 ### Summary
 
