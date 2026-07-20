@@ -21,85 +21,51 @@ to get the example projects running on your machine.
 
 ## Phase 4. Technical Modification
 
-Describe your small technical modification to the example project.
-
-Include:
-
-- What you changed
-- Why you chose that change
-- How you verified that it worked
-- What result, output, chart, metric, or behavior confirmed the change
-
-Compared with the example project,
-explain what is different and why the change matters.
-
-Was it easy, or surprisingly challenging and why do you think so?
+- I changed the confusion matrix plot to a red/green color scheme.
+- Green shows correct predictions, while red shows incorrect ones.
+- I verified the change by rerunning the notebook and confirming the updated plot rendered correctly.
+- The change improved the readability of the evaluation output.
+- This was a simple update, but it made the chart easier to interpret.
 
 ## Phase 5. Custom Project
 
-Describe your custom project and how you made your modeling decisions.
-
-Be specific about what changed from the example project.
+- I adapted the example notebook into a custom classification project.
+- I changed the target from species to sex and updated the surrounding notebook text to match.
 
 ### Basis and Data
 
-Describe the dataset, input, or example you started with.
-
-Include:
-
-- The original example dataset or input
-- The data source
-- Why you chose it, kept it, or changed it
-- Any important limitations or assumptions
+- I used the Seaborn penguins dataset.
+- The dataset includes measurements such as bill length, bill depth, flipper length, and body mass.
+- I kept the dataset because it is simple, familiar, and well suited to classification.
+- A limitation is that some rows contain missing values.
 
 ### Modeling Approach
 
-Describe the problem type and modeling approach for this project.
-
-Include:
-
-- Is this supervised or unsupervised and how do you know
-- Is this classification, regression, clustering, recommendation, forecasting, or another type of ML task
-- What kind of target works well for this approach
-- Why your selected model or method is appropriate
+- This is a supervised classification problem because the notebook uses labeled data to predict a categorical target.
+- I used a decision tree classifier because it is easy to interpret and works well for small tabular data.
 
 ### Target
 
-Describe the example target variable.
-
-Then describe your chosen target variable.
-
-Explain how your target choice changes the modeling approach, interpretation, or evaluation.
+- The original example target was species, a three-class problem.
+- I changed the target to sex, which creates a two-class task.
+- This made the problem slightly harder because the classes overlap more, so interpretation and evaluation changed.
 
 ### Features
 
-Describe the example features.
-
-Then describe the features you used to predict your target.
-
-Explain what you changed, added, removed, or kept and why.
+- The original example used bill length, bill depth, flipper length, and body mass as features.
+- I kept those same features because they are numeric and relevant for predicting penguin sex.
+- I did not add or remove features.
 
 ### Evaluation and Results
 
-Describe how you evaluated your model.
-
-Include:
-
-- The metric or evidence you used
-- The main result
-- Whether the result was useful, interesting, surprising, or disappointing
-- Any weakness, limitation, or next improvement
+- I evaluated the model with a train/test split.
+- I used accuracy and a classification report as the main evidence.
+- The test accuracy was about 0.84.
+- The result was useful because it showed that the model could learn the pattern, though the new target was harder than species.
 
 ### Summary
 
-Summarize your custom project.
-
-Include:
-
-- How you implemented your custom model
-- What results you got
-- What you learned
-- How well you exercised the skills covered in this project
-- What kinds of real problems you could apply these skills to in the future
-
-Display at least one image or screenshot showing your work.
+- I implemented a custom version of the notebook by changing the target to sex and updating the narrative, setup, and evaluation text.
+- The model performed reasonably well, but the new target was more difficult than species.
+- This project helped me practice classification workflow, model evaluation, and documentation.
+- Display at least one image or screenshot showing your work.
